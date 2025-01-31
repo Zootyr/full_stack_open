@@ -8,7 +8,7 @@ sequenceDiagram
     server-->>browser: HTML Status 201
     deactivate server
     
-    browser: The browser updates notes on page according to spa.js
+    Note right of browser: : The browser updates notes on page according to spa.js
 
 ```
 
