@@ -1,3 +1,4 @@
+Single-page app does not reload page, page is updated accoriding to spa.js and note is sent to server.
 ```mermaid
 sequenceDiagram
     participant browser
