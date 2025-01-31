@@ -1,3 +1,4 @@
+New note is posted which triggers reloading page (same traffic as inital load)
 ```mermaid
 sequenceDiagram
     participant browser
