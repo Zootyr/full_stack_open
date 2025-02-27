@@ -1,4 +1,4 @@
-Initial laoding of page is very similar to non-spa version, but some documents have different names
+Initial loading of page is very similar to non-spa version, but some documents have different names
 ```mermaid
 sequenceDiagram
     participant browser
