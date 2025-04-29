@@ -4,6 +4,10 @@ const Button = (props) => {
   return <button onClick={props.onClick}> {props.text} </button>;
 };
 
+const MaxVotes = (props) => {
+  return 0
+};
+
 const App = () => {
   const anecdotes = [
     'If it hurts, do it more often.',
@@ -23,16 +27,16 @@ const App = () => {
   console.log(votes)
   console.log(selected)
   const handleVotes = () => {
-    const copy = {
+    const copy = [
       ...votes 
-    };
+    ];
     copy[selected] += 1,
-
     setVotes(copy);
   };
 
   return (
     <div>
+      <h1> Anecdote of the day </h1>
       <p>{anecdotes[selected]}</p>
       <p>Has votes {votes[selected]} </p>
       <p>
@@ -47,6 +51,8 @@ const App = () => {
           text="Vote"
         />
       </p>
+      <h1> Anecdote with most votes </h1>
+      <p> {anecdotes[votes.indexOf(Math.max(...votes))]} </p>
     </div>
   );
 };
